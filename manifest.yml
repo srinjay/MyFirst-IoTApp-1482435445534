@@ -1,0 +1,12 @@
+applications:
+- path: .
+  memory: 512M
+  instances: 1
+  domain: mybluemix.net
+  name: MyFirst-IoTApp
+  host: MyFirst-IoTApp
+  disk_quota: 1024M
+  services:
+  - MyFirst-IoTApp-cloudantNoSQLDB
+  - MyFirst-IoTApp-iotf-service
+  - availability-monitoring-auto
